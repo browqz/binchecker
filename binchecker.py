@@ -1,4 +1,4 @@
-def identify_card_type(prefix):
+def type_de_carte(prefix):
     card_prefixes = {
         "4": "Visa",
         "5": "Mastercard",
@@ -31,7 +31,7 @@ def identify_card_type(prefix):
     return "Inconnu"
 
 user_input = input("Veuillez entrer les cinq premiers chiffres de votre carte : ")
-card_type = identify_card_type(user_input)
-print(f"Type de carte : {card_type}")
+cc = type_de_carte(user_input)
+print(f"Type de carte : {cc}")
 
 input("Appuyez sur Entrée pour quitter...")
